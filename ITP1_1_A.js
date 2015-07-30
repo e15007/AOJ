@@ -1,5 +1,5 @@
-'use strict';
-(function() {
-console.log('Hello World');
+// 'use strict';
+// (function() {
+// console.log('Hello World');
 
-}()); 
+// }()); 
