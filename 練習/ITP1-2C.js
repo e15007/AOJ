@@ -3,12 +3,12 @@
   var inputs = stdin.toString();
   var params = inputs.split('\n')[0].split(' ').map(Number);
   (function(a,b,c){
-    var result = [a,b,c].sort(function(a,b){
+    var result = params.sort(function(a,b){
         if( a < b ) return -1;
         if( a > b ) return 1;
         return 0;
     });
-    console.log(result.join(' '));
+    console.log(params.join(' '));
   }(params[0],params[1],params[2])); 
 }(require('fs').readFileSync('/dev/stdin', 'utf8')));
 
